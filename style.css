@@ -1,0 +1,430 @@
+/* ====================  font url =================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=M+PLUS+1+Code&family=Noto+Serif+Display:wght@600&family=Open+Sans:wght@400;500;800&family=Oswald:wght@300&family=Outfit&family=Playfair+Display:wght@400;500&family=Poppins:wght@400;500;600&family=Raleway:wght@500;600&family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&family=Satisfy&family=The+Nautigal:wght@700&display=swap');
+;
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'M PLUS 1 Code', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Satisfy', cursive;
+font-family: 'The Nautigal', cursive; */
+/* font-family: 'Noto Serif Display', serif; */
+:root {
+    --primary-color: #D8B069;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0df5;
+}
+
+/* #0D0D0D */
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* header and hero part  */
+nav ul li {
+    position: relative;
+}
+
+nav ul li .nav-link {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    transition: all 0.9s;
+
+}
+
+.nav-link::before {
+    content: '';
+    width: 0px;
+    height: 4px;
+    background-color:#D8B069 ;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.9s;
+}
+
+.nav-link:hover:before {
+    color: #D8B069;
+    width: 40px;
+}
+
+header {
+
+    position: relative;
+}
+
+.head {
+    background-color: #0d0d0df5;
+
+}
+.logo {
+    letter-spacing: 8px;
+    position: relative;
+    color: #D8B069;
+    font-family: normal;
+}
+
+.logo::before {
+    content: "";
+    background-color: #D8B069;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 2px;
+    right: -25px;
+}
+
+.text-btn{
+    width: 200px;
+    padding: 15px 0;
+}
+
+
+.hero-title-text {
+    font-style: italic;
+}
+
+.hero-text {
+    background-image: url(images/backgoround/fixed.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    z-index: 1;
+
+}
+.hero-text::before{
+    background-color: #282833c5;
+    content: '';
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+}
+.hero-text h1,h3,button{
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    letter-spacing: 10px;
+    font-weight: 800;
+    font-size: 5rem;
+    position: relative;
+    margin-bottom: 1.8rem;
+    font-family: normal;
+    display: inline-block;
+    color: #D8B069;
+}
+
+.hero-title::after {
+    content: "";
+    background-color: #D8B069;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: -10px;
+
+}
+
+.hero-btn {
+
+    width: 100%;
+    background-color: #282833;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.form {
+    width: 70%;
+}
+
+.hero-detail {
+    background: #464649;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    padding: 0.2rem;
+    width: 100%;
+}
+.hero-detail h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.titles-movies{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+@media(min-width:768px) {
+    .hero-btn {
+        min-width: 350px;
+        min-height: 50px;
+    }
+
+    .form {
+        min-width: 350px;
+    }
+
+    .hero-detail {
+        max-width: 371px;
+        min-height: 630px;
+
+    }
+
+    .hero-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 15px;
+    }
+
+
+
+}
+
+.web-btn {
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.web-btn:hover {
+    color: white;
+}
+
+
+.fa-chevron-down {
+    font-size: 3rem;
+    animation: up-down 1s ease-in-out 2s infinite alternate-reverse;
+    color: #D8B069;
+    transition: all 0.3s;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.my-btn {
+    background-color: #D8B069;
+}
+
+.card img {
+    transition: all 1s;
+    position: relative;
+}
+
+
+.card img:hover {
+    transform: scale(1.02);
+}
+
+.bests,
+.inspirational,
+.kids,
+.boys {
+    margin-top: 6rem;
+}
+
+hr {
+    border: 8px solid white;
+    width: 150px;
+}
+
+/* ====================about section ================================ */
+.about-description {
+    background-image: url(images/about/about-backgorund.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: right bottom;
+    height: 100vh;
+
+}
+
+
+.experience {
+    font-family: 'Noto Serif Display', serif;
+    color: white;
+    font-weight: 800;
+    font-size: 3em;
+}
+
+.about-hero {
+    font-family: 'Noto Serif Display', serif;
+    color: white;
+
+}
+
+.persons {
+    position: relative;
+    z-index: 1;
+}
+
+.persons::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223, 216, 216, 0.13);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    display: none;
+}
+
+.persons:hover::before {
+    display: block;
+
+}
+
+/* =====================tv show==================== */
+.swiper {
+    width: 400px;
+    height: 400px;
+  }
+@media (min-width:768px){
+    .swiper {
+        width: 500px;
+        height: 400px;
+      } 
+}
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+  }
+  .swiper-slide img:hover {
+      transform: translate(1.1);
+  }
+  .slider-box{
+      box-shadow: 0px 0px 40px rgb(78, 75, 75);
+  }
+/* ==========================kids gallery ======================= */
+#kids{
+    position: relative;
+}
+.kids-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.kids-image{
+    flex-basis: 50%;
+}
+.kids-image img{
+    transition: all 0.9s;
+    box-shadow: 0px 0px 40px rgb(78, 75, 75);
+    max-width: 100%;
+}
+.kids-image img:hover{
+transform: translateY(-20px) scale(1.1);
+}
+.kids-text{
+    flex-basis: 50%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.kids-btn{
+    background-color: #D8B069;
+    border-radius: unset;
+    font-weight: bolder;
+    padding: 15px;
+    transition: all 0.8s;
+    position: relative;
+    z-index: 1;
+}
+.kids-btn:hover{
+    background-color: #282833;
+    color: white;
+}
+/* ========================question ================= */
+.question-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: white;
+    font-size: 2.6rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.accordion-button,.accordion-body{
+    background-color: #282833;
+font-size: 2rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.question-section{
+    width: 450px;
+    margin: 0 auto;
+}
+@media (min-width:992px){
+    .question-section{
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+/* ============================= footer section =================== */
+.footer {
+    background-color: #282833;
+    padding: 2rem 0;
+}
+
+.footer i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    transition: all 0.5s;
+    background-color: #D8B069;
+
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.links>.fa-brands:hover {
+    background-color: white;
+
+}
+
+.footer p {
+    color: #D8B069;
+}
